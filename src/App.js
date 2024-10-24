@@ -1,27 +1,75 @@
 
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import MenuHooks from './HooksLearning/MenuHooks';
-import UseState from './HooksLearning/UseState';
-import UseEffect from './HooksLearning/UseEffect';
-import UserContext from './HooksLearning/ThemeButton';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import { FoodComponent } from './FoodApp/FoodComponent';
+import {createBrowserRouter,RouterProvider} from "react-router-dom";
+import About from './FoodApp/About';
+import Body from './FoodApp/Body';
+import Error from './FoodApp/Error';
+import Contact from './FoodApp/Contact';
+import ResMenu from './FoodApp/ResMenu';
+import UserContext from './FoodApp/utils/UserContext';
+import { Provider } from 'react-redux';
+import appstore from './FoodApp/utils/appStore';
+const Grocery = lazy(() => import ("./FoodApp/Grocery"));
+
+
 
 const App = () => {
-  return (
-    // <Router>
-    //   <Routes>
-    //     <Route path="/" element={<MenuHooks />} />
-    //     <Route path="/use-state" element={<UseState />} />
-    //     <Route path="/use-effect" element={<UseEffect />} />
-    //     <Route path="/use-context" element={<UserContext />} />
-    //     <Route path="/use-context" element={<FoodComponent />} />
 
-    //   </Routes>
-    // </Router>
-    <FoodComponent/>
-    
+  const [userName , setuserName] = useState();
+
+  useEffect (()=>{
+    const data = {
+      name : "Nandhini devi"
+    }
+    setuserName(data.name)
+  },[])
+  return (
+    <Provider store={appstore}>
+    <UserContext.Provider value = {{loggedId : userName , setuserName}}>
+    <RouterProvider router={appRouter} />
+    </UserContext.Provider>
+    </Provider>
   );
 };
 
+
+const appRouter = createBrowserRouter([
+
+ 
+  
+{
+  path:'/',
+  element : <FoodComponent/>,
+  children: [
+    {
+      path:'/',
+      element: <Body/>
+    },
+    {
+      path:'/about',
+      element: <About/>
+    },
+    {
+      path:'/contact',
+      element: <Contact/>
+    },
+    {
+      path:'/grocery',
+      element:<Suspense fallback = {<h1>Loading...</h1>}> <Grocery/></Suspense>
+    },
+    {
+      path:'/restaurant/:resId',
+      element: <ResMenu/>
+    }
+  ],
+  errorElement:<Error/>
+},
+
+
+])
+
 export default App;
+
+
+
