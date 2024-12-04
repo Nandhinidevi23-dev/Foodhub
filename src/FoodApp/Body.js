@@ -32,8 +32,8 @@ const Body = () => {
 
     const result = await data.json();
     console.log("BODY LIST",result)
-    setListRes(result.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
-    SetFilterRes(result.data.cards[1].card.card.gridElements.infoWithStyle.restaurants);
+    setListRes(result.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
+    SetFilterRes(result.data.cards[2].card.card.gridElements.infoWithStyle.restaurants);
   };
  
   const onlineStatus = UseOnlineStatus();
