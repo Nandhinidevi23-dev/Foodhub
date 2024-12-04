@@ -1,16 +1,18 @@
 import { useDispatch } from "react-redux";
 import { IMAGE_URL } from "./utils/constant";
-import {addItem} from './utils/cartSlices'
+import { addItem } from "./utils/cartSlices";
 
 
-const CategoryItemList = ({ items }) => {
-    const dispatch = useDispatch()
 
-    const handleAddItem  = () => {
-        dispatch(addItem("pizza"));
-    }
 
-    console.log("listItemcard", items)
+const CategoryItemList = ({ items ,dummy}) => {
+    const dispatch = useDispatch();
+
+  const handleAddItem = (item) => {
+    // Dispatch an action
+    dispatch(addItem(item));
+  };
+
     return (
         <div>
 
@@ -25,7 +27,7 @@ const CategoryItemList = ({ items }) => {
                     </div>
                     <div className="w-3/12  p-4">
                         <img src={IMAGE_URL + item.card.info.imageId} className="w-[300px]" />
-                        <button className="absolute bg-pink-400 text-white m-auto px-3"  onClick = {handleAddItem}>Add</button>
+                        <button className="absolute bg-pink-400 text-white m-auto px-3"    onClick={() => handleAddItem(item)}>Add</button>
                     </div>
 
 

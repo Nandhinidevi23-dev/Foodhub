@@ -10,6 +10,7 @@ import ResMenu from './FoodApp/ResMenu';
 import UserContext from './FoodApp/utils/UserContext';
 import { Provider } from 'react-redux';
 import appstore from './FoodApp/utils/appStore';
+import CardItem from './FoodApp/CartItem';
 const Grocery = lazy(() => import ("./FoodApp/Grocery"));
 
 
@@ -61,6 +62,10 @@ const appRouter = createBrowserRouter([
     {
       path:'/restaurant/:resId',
       element: <ResMenu/>
+    },
+    {
+      path:"/carditem",
+      element:<CardItem/>
     }
   ],
   errorElement:<Error/>
