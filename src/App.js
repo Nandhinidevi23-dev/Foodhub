@@ -72,7 +72,10 @@ const appRouter = createBrowserRouter([
 },
 
 
-])
+],
+{
+  basename: '/Foodhub', // Set this to the subdirectory of your GitHub Pages URL
+})
 
 export default App;
 
