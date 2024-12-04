@@ -28,7 +28,7 @@ const App = () => {
   return (
     <Provider store={appstore}>
     <UserContext.Provider value = {{loggedId : userName , setuserName}}>
-    <RouterProvider router={appRouter} />
+    <RouterProvider  router={appRouter} />
     </UserContext.Provider>
     </Provider>
   );
