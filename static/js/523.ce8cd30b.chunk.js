@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunklearningreact=self.webpackChunklearningreact||[]).push([[523],{523:(e,n,r)=>{r.r(n),r.d(n,{default:()=>c});var a=r(579);const c=()=>(0,a.jsx)("h1",{children:"WelCome to Grocery Component"})}}]);
+//# sourceMappingURL=523.ce8cd30b.chunk.js.map
