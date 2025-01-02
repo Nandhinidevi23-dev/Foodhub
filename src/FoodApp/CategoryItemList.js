@@ -27,7 +27,7 @@ const CategoryItemList = ({ items ,dummy}) => {
                     </div>
                     <div className="w-3/12  p-4">
                         <img src={IMAGE_URL + item.card.info.imageId} className="w-[300px]" />
-                        <button className="absolute bg-pink-400 text-white m-auto px-3"    onClick={() => handleAddItem(item)}>Add</button>
+                        <button className=" bg-purple-700 text-white w-[150px]"    onClick={() => handleAddItem(item)}>Add</button>
                     </div>
 
 

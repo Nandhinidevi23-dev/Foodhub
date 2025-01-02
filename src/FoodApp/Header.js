@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import UseOnlineStatus from './utils/UseOnlineStatus';
 import UserContext from './utils/UserContext';
 import  {useSelector}  from 'react-redux';
+import logoimg from './Image/logoFoodhub.png'
 
 
 const Header = () => {
@@ -20,17 +21,17 @@ const Header = () => {
     return btnName=== "login" ? setBtnName("logout") : setBtnName("login")
   }
     return (
-      <div className='flex justify-between shadow-md bg-pink-100 mb-3'>
-        <img className="w-28" src={LOGO_URL} />
+      <div className='flex justify-between shadow-md bg-white-100 mb-3'>
+        <img className="w-23" src={logoimg} />
         <ul className='menu-list flex items-center'>
-        <li className='px-3 '>Online Status :{onlineStatus ? "🟢" : "🔴"} </li>
-          <li className='px-2'><Link to="/">🏠Home</Link></li>
-          <li className='px-2'><Link to="/grocery">🛒Grocery</Link></li>
-          <li className='px-2'><Link to="/about">🤵About Us</Link></li>
-          <li className='px-2'><Link to="/contact">📞Contact Us</Link></li>
-          <li className='px-2 flex'><Link to="/carditem">Cart-({cartItems.length} item)</Link> </li>
-          <li className='px-2'>{loggedId}</li>
-          <li className='px-2'><button className="px-4 py-2 bg-pink-700 rounded-md text-white" onClick={() => {buttonLogin()}}>{btnName} </button></li>
+        {/* <li className='px-3 '>Online Status :{onlineStatus ? "🟢" : "🔴"} </li> */}
+          <li className='px-2'><Link to="/" className='text-orange-600 font-semibold text-lg'>Home</Link></li>
+          <li className='px-2'><Link to="/grocery" className='text-orange-600 font-semibold text-lg'>Grocery</Link></li>
+          <li className='px-2'><Link to="/about" className='text-orange-600 font-semibold text-lg'>About Us</Link></li>
+          <li className='px-2'><Link to="/contact" className='text-orange-600 font-semibold text-lg'>Contact Us</Link></li>
+          <li className='px-2 flex'><Link to="/carditem" className='text-orange-600 font-semibold text-lg'>Cart-({cartItems.length} item)</Link> </li>
+          <li className='px-2'><h3 className='text-orange-600 font-semibold text-lg'>{loggedId} </h3></li>
+          <li className='px-2'><button className="px-4 py-2 bg-purple-600 rounded-md text-white" onClick={() => {buttonLogin()}}>{btnName} </button></li>
         
 
         </ul>

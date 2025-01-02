@@ -51,9 +51,11 @@ const Body = () => {
 
   return  (
     <div className="Body">
-      <div className="filter-container flex">
-        <div className="search-container">
-          <input className="border border-solid border-black mr-2" type="text" value={searchText} 
+      <div className="filter-container flex justify-between px-3 ">
+
+
+        <div className="search-container flex gap-3">
+          <input className="border-2 border-purple-300 mr-2" type="text" value={searchText} 
           onChange={(e) => {
             setSearchText(e.target.value);
             if (e.target.value === ''){
@@ -64,21 +66,22 @@ const Body = () => {
             console.log(searchText);
           }} />
 
-          <button className="px-4 bg-blue-300 py-1 mr-3 rounded-md" onClick={() => {
+          <button className="px-4 bg-purple-600 hover:bg-purple-500 py-1 mr-3 rounded-md text-white" onClick={() => {
             const filterdRes = ListRes.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
             SetFilterRes(filterdRes);
             console.log(filterdRes)
           }}>Search</button>
 
-        </div>
-        <button className="px-4 bg-blue-300 py-1 rounded-md" onClick={TopRatedClick}>
+<button className="px-4 bg-purple-600 hover:bg-purple-500 py-1 mr-3 rounded-md text-white" onClick={TopRatedClick}>
           Top Rated Restaurant
         </button>
+        </div>
+       
 
         <div className="flex px-4">
-          <label className="px-2">User Name</label>
+          <label className="px-2 py-2 text-orange-600 font-semibold">User Name</label>
           <input 
-  className="border border-black px-2" 
+  className="border-2 border-purple-300 mr-2" 
   value= {loggedId}
   onChange = {(event) => setuserName(event.target.value)} 
 />

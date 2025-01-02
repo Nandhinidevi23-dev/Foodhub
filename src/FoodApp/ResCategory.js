@@ -11,9 +11,9 @@ const ResCategory = ({data , showItem , setShowIndex }) => {
     }
     return(
         <div>
-            <div className="w-7/12 bg-gray-100 shadow-sm mx-auto my-3 p-3 ">
+            <div className="w-7/12 bg-orange-200 shadow-sm mx-auto my-3 p-3 ">
             <div className="flex justify-between">
-                <span className="font-bold text-xl" onClick = {handleClickList}>
+                <span className="font-bold text-xl text-purple-700" onClick = {handleClickList}>
                     {data.title}({data.itemCards.length})</span>
                 <span>🔽</span>
                 </div>
