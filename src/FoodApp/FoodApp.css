@@ -5,4 +5,21 @@
     width: 250px;
     height: 300px;
 }
+
+.header-container, .menu-container{
+    background-color: #A0D683;
+}
+.header-container li{
+    color: #000;
+}
+.background-card{
+    background-color: #eeffc9;
+}
+.background-card h4{
+    color: #346d38;
+}
+button{
+    background-color: #a0d683;
+    color:#000
+}
 /* p-2 m-2 w-[250px] h-[300px] bg-pink-50 rounded-lg  */
