@@ -23,7 +23,7 @@ const Header = () => {
   }
     return (
       <div className='header-container flex justify-between align-middle shadow-md bg-white-100 mb-3 p-2'>
-        <h4 className='text-black font-semibold text-2xl'>Food Hub</h4>
+        <h4 className='text-black font-semibold text-2xl'>Foodhub</h4>
         <ul className='hidden lg:flex lg:menu-list items-center '>
         {/* <li className='px-3 '>Online Status :{onlineStatus ? "🟢" : "🔴"} </li> */}
           <li className='px-2'><Link to="/" className='  font-medium text-lg'>Home</Link></li>
