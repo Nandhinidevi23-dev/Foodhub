@@ -5,8 +5,9 @@ import { Link } from 'react-router-dom';
 import UseOnlineStatus from './utils/UseOnlineStatus';
 import UserContext from './utils/UserContext';
 import  {useSelector}  from 'react-redux';
-import logoimg from './Image/logoFoodhub.png';
-import './FoodApp.css'
+import logo from './Image/logo.png';
+import './FoodApp.css';
+ 
 
 
 const Header = () => {
@@ -22,8 +23,9 @@ const Header = () => {
     return btnName=== "login" ? setBtnName("logout") : setBtnName("login")
   }
     return (
-      <div className='header-container flex justify-between align-middle shadow-md bg-white-100 mb-3 p-2'>
-        <h4 className='text-black font-semibold text-2xl'>Foodhub</h4>
+      <div className='headerSection'>
+      <div className='header-container flex justify-between align-middle shadow-md bg-white-100  p-2'>
+        <img src={logo} alt="logoimg" width={150} height={45}/>
         <ul className='hidden lg:flex lg:menu-list items-center '>
         {/* <li className='px-3 '>Online Status :{onlineStatus ? "🟢" : "🔴"} </li> */}
           <li className='px-2'><Link to="/" className='  font-medium text-lg'>Home</Link></li>
@@ -36,6 +38,7 @@ const Header = () => {
         
 
         </ul>
+      </div>
       </div>
     )
   }

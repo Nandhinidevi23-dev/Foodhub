@@ -4,6 +4,7 @@ import resImg from './Image/res-cardimg1.jpg'
 import Header from './Header';
 import Body from './Body';
 import { Outlet } from 'react-router-dom';
+import HeaderSection from './HeaderSection';
 
 
 export const FoodComponent = () => {

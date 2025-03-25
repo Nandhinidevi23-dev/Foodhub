@@ -1,0 +1,29 @@
+{
+    "menuItems" : [
+      {
+        "name": "Pizza",
+        "image": "/Foodhub/images/pizza.png"
+      },
+      {
+        "name": "Chicken",
+        "image": "/Foodhub/images/p-2.png"
+      },
+      {
+        "name": "Fries",
+        "image": "/Foodhub/images/p-3.png"
+      },
+      {
+        "name": "Briyani",
+        "image":"/Foodhub/images/p-6.png"
+      },
+      {
+        "name": "FriedRice",
+        "image": "/Foodhub/images/p-5.png"
+      },
+      {
+        "name": "Dosa",
+        "image": "/Foodhub/images/p-7.png"
+      }
+    ]
+  }
+

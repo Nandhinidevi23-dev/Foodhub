@@ -11,6 +11,7 @@ import UserContext from './FoodApp/utils/UserContext';
 import { Provider } from 'react-redux';
 import appstore from './FoodApp/utils/appStore';
 import CardItem from './FoodApp/CartItem';
+import MainDashboard from './FoodApp/MainDashboard';
 const Grocery = lazy(() => import ("./FoodApp/Grocery"));
 
 
@@ -45,7 +46,7 @@ const appRouter = createBrowserRouter([
   children: [
     {
       path:'/',
-      element: <Body/>
+      element: <MainDashboard/>
     },
     {
       path:'/about',
