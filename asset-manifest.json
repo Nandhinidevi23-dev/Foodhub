@@ -1,18 +1,30 @@
 {
   "files": {
-    "main.css": "/Foodhub/static/css/main.c4e080d8.css",
-    "main.js": "/Foodhub/static/js/main.a8c21487.js",
+    "main.css": "/Foodhub/static/css/main.e0a52825.css",
+    "main.js": "/Foodhub/static/js/main.b8521d4a.js",
     "static/js/523.ce8cd30b.chunk.js": "/Foodhub/static/js/523.ce8cd30b.chunk.js",
     "static/js/453.3bc8ae80.chunk.js": "/Foodhub/static/js/453.3bc8ae80.chunk.js",
+    "static/media/sectionImg.png": "/Foodhub/static/media/sectionImg.93e84de86a9dff888f37.png",
+    "static/media/p-7.png": "/Foodhub/static/media/p-7.c605ae21d4ab99c42323.png",
     "static/media/res-cardimg1.jpg": "/Foodhub/static/media/res-cardimg1.6f5e723f6097ce48194f.jpg",
+    "static/media/pizza.png": "/Foodhub/static/media/pizza.f70e557e057713de5a36.png",
+    "static/media/logo.png": "/Foodhub/static/media/logo.6b3ef0866a35c6538047.png",
+    "static/media/p-6.png": "/Foodhub/static/media/p-6.506fec16903bee0e49c0.png",
+    "static/media/p-2.png": "/Foodhub/static/media/p-2.e7f01c1ac510bc420341.png",
+    "static/media/p-3.png": "/Foodhub/static/media/p-3.64fab3fbfdfd6376076b.png",
+    "static/media/p-5.png": "/Foodhub/static/media/p-5.991822103d7dd8ecb5f4.png",
+    "static/media/poppins-latin-400-normal.woff": "/Foodhub/static/media/poppins-latin-400-normal.1458587c0aa7cd06b82b.woff",
+    "static/media/poppins-latin-400-normal.woff2": "/Foodhub/static/media/poppins-latin-400-normal.405055dd680fa1dcdfa2.woff2",
+    "static/media/poppins-latin-ext-400-normal.woff": "/Foodhub/static/media/poppins-latin-ext-400-normal.7e12786771ac4a8e6a5c.woff",
+    "static/media/poppins-latin-ext-400-normal.woff2": "/Foodhub/static/media/poppins-latin-ext-400-normal.d7c074a9c34fe9785f69.woff2",
     "index.html": "/Foodhub/index.html",
-    "main.c4e080d8.css.map": "/Foodhub/static/css/main.c4e080d8.css.map",
-    "main.a8c21487.js.map": "/Foodhub/static/js/main.a8c21487.js.map",
+    "main.e0a52825.css.map": "/Foodhub/static/css/main.e0a52825.css.map",
+    "main.b8521d4a.js.map": "/Foodhub/static/js/main.b8521d4a.js.map",
     "523.ce8cd30b.chunk.js.map": "/Foodhub/static/js/523.ce8cd30b.chunk.js.map",
     "453.3bc8ae80.chunk.js.map": "/Foodhub/static/js/453.3bc8ae80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4e080d8.css",
-    "static/js/main.a8c21487.js"
+    "static/css/main.e0a52825.css",
+    "static/js/main.b8521d4a.js"
   ]
 }

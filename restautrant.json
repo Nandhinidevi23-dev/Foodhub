@@ -1,0 +1,52 @@
+{
+    "restaurant": [
+      {
+          "name": "Bilal GrandInn",
+          "type": "Cafe",
+          "price_for_two": "₹200",
+          "rating": 4.2
+      },
+      {
+          "name": "Bilal Restaurant",
+          "type": "Chinese, South Indian, Biryani",
+          "price_for_two": "₹299",
+          "rating": 4.3
+      },
+      {
+          "name": "Hotel Bilal",
+          "type": "Chinese, South Indian, Biryani",
+          "price_for_two": "₹150",
+          "rating": 4.3
+      },
+      {
+          "name": "Boba Bar - Bubble Teas, Boba Milkshakes And Sundaes",
+          "type": "Beverages, Ice Cream, Desserts",
+          "price_for_two": "₹250",
+          "rating": 4.7
+      },
+      {
+          "name": "OYALO Pizza",
+          "type": "Pizza, Pasta, Sandwich, Desserts, Cafe",
+          "price_for_two": "₹350",
+          "rating": 4.3
+      },
+      {
+          "name": "Madno - House of Sundaes",
+          "type": "Beverages, Ice Cream, Desserts",
+          "price_for_two": "₹250",
+          "rating": 4.3
+      },
+      {
+          "name": "Frozen Bottle - Milkshakes, Desserts And Ice Cream",
+          "type": "Beverages, Ice Cream, Desserts",
+          "price_for_two": "₹250",
+          "rating": 4.4
+      },
+      {
+          "name": "Asai Unavagam",
+          "type": "South Indian",
+          "price_for_two": "₹100",
+          "rating": 4.4
+      }
+  ]
+  }
