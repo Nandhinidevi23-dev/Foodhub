@@ -77,17 +77,22 @@ const Body = ({ FilterRes,ListRes,setListRes }) => {
 
   return (
     <div className="Body">
-      <div className="filter-container  text-center m-10 lg:flex justify-between px-3  ">
+      <div className="filter-container  text-center m-10 flex justify-between lg:flex justify-between px-3  ">
 
-        <div className="flex">
+          <div className="textClass">
+          <h2 className="text-[33px] font-bold">Featured Restaurants</h2>
+          </div>
+          <div className="">
           <button
-            className="  lg:px-4  py-1 mr-3 rounded-md  "
+            className="lg:px-4  py-1 mr-3 rounded-md bg-[] "
             onClick={TopRatedClick}
           >
             Top Rated Restaurant
           </button>
+          </div>
+          
 
-          <div className="flex px-4">
+          {/* <div className="flex px-4">
             <label className="px-2 py-2 border-green-700 font-semibold">
               User Name
             </label>
@@ -96,17 +101,23 @@ const Body = ({ FilterRes,ListRes,setListRes }) => {
               value={loggedId}
               onChange={(event) => setuserName(event.target.value)}
             />
-          </div>
-        </div>
+          </div> */}
+       
       </div>
 
-      <div class="bannerList">
+
+      {/* ***************************************************************************************** */}
+
+      {/* <div class="bannerList">
       {Array.isArray(bannerList) &&
         bannerList.map((restaurant) =>(
           <li key={restaurant.info.id}>{restaurant.info.text}</li>
         ))
       }
-      </div>
+      </div> */}
+      {/* ***************************************************************************************** */}
+
+
       <div className="flex flex-wrap w-[100%] mt-2 ">
         {Array.isArray(FilterRes) &&
           FilterRes.map((restaurant) => (

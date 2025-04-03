@@ -1,3 +1,8 @@
+.body{
+    font-family: "Jost", sans-serif;
+
+}
+
 .cardContainer{
     background-color: #fff0de;
     padding: 20px;
@@ -16,14 +21,18 @@
     color: #fff;
 }
 .background-card{
-    background-color: #eeffc9;
+    border:1px solid #7a7a7a
 }
 .background-card h4{
-    color: #346d38;
+    color: #414141;
+    font-size: 16px;
+}
+.background-card p{
+    font-size: 14px;
 }
 button{
-    background-color: #a0d683;
-    color:#000
+    background-color: #fd7227;
+    color:#fff;
 }
 /* p-2 m-2 w-[250px] h-[300px] bg-pink-50 rounded-lg  */
 

@@ -7,15 +7,15 @@ const ResContainer = (props) => {
     return (
       <div className=' p-2 m-2 w-[250px] h-[270px] rounded-lg background-card'>
   
-        <img className='w-[250px] h-[150px] object-cover m-auto rounded-lg' src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+        <img className='w-[250px] h-[150px] object-cover m-auto rounded-lg hover:w-[350px] bg-black transition-all duration-300' src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
           cloudinaryImageId} />
-        <h4 className=' font-bold text-center text-md'>{name}</h4>
+        <h5 className=' font-bold text-center m-1'>{name}</h5>
         {/* <h4>{locality}</h4> */}
         <div className='bg-white p-2 m-1 rounded '>
-        <h4>{cuisines.join(", ")}</h4>
+        <p>{cuisines.join(", ")}</p>
         <div className='flex justify-between'>
-        <h4>{costForTwo}</h4>
-        <h4>{avgRating} ⭐</h4>
+        <p>{costForTwo}</p>
+        <p>{avgRating} ⭐</p>
         </div>
         </div>
       </div>
