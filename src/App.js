@@ -42,7 +42,7 @@ const appRouter = createBrowserRouter([
   
 {
   path:'/',
-  element : <FoodComponent/>,
+  element : <MainDashboard/>,
   children: [
     {
       path:'/',
