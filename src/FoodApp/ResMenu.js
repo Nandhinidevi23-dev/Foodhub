@@ -23,7 +23,7 @@ const ResMenu = () => {
 
   const categories = resInfo?.cards?.[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards.filter
   (c => c.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory")
-  // console.log("category", categories)
+   console.log("category", categories)
 
   return (
     <div>
@@ -33,7 +33,7 @@ const ResMenu = () => {
 
       {categories.map((category ,index) => 
         <ResCategory data={category.card.card} 
-        showItem = {index === showIndex  ? true : false}
+        showItem = {index === showIndex  }
         //concept: lifing the state up: setOpenIndex(showIndex === index ? null : index); 
         setShowIndex  = {() => setShowIndex(index) 
         }/> 

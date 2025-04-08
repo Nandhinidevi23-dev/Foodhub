@@ -118,7 +118,7 @@ const Body = ({ FilterRes,ListRes,setListRes }) => {
       {/* ***************************************************************************************** */}
 
 
-      <div className="flex flex-wrap w-[100%] mt-2 ">
+      <div className="lg:flex flex-wrap w-[100%] mt-2 sm:flex sm:justify-center sm:items-center">
         {Array.isArray(FilterRes) &&
           FilterRes.map((restaurant) => (
             <Link

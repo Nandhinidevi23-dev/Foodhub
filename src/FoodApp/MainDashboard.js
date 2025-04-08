@@ -4,6 +4,7 @@ import Body from './Body';
 import API_List from './utils/API';
 import SWIGGY_API_DATA from "./utils/API";
 import FoodBanner from './FoodBanner';
+import Header from './Header';
 
 
 const MainDashboard = () => {
@@ -62,7 +63,7 @@ const MainDashboard = () => {
   return (
     <div>
         <HeaderSection searchValue={searchValue} setSearchValue={setSearchValue}/>
-        <FoodBanner/>
+        <FoodBanner key={window.location.pathname} />
         <Body FilterRes = {filterRes} ListRes={listRes} setListRes ={setListRes}/>
     </div>
   )

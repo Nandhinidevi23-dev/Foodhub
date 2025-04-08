@@ -1,12 +1,15 @@
-import { useState } from "react";
+import { useState ,useEffect } from "react";
 import CategoryItemList from "./CategoryItemList"
 
-const ResCategory = ({data , showItem , setShowIndex }) => {
+const ResCategory = ({data , showItem , showIndex,setShowIndex ,index }) => {
    
+    useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[])
  
     const handleClickList = () =>{
         
-       setShowIndex();
+       setShowIndex(showIndex === index? null : index);
        
     }
     return(
@@ -15,7 +18,7 @@ const ResCategory = ({data , showItem , setShowIndex }) => {
             <div className="flex justify-between">
                 <span className="font-bold text-xl text-black" onClick = {handleClickList}>
                     {data.title}({data.itemCards.length})</span>
-                <span>🔽</span>
+                <span onClick = {handleClickList}>{showItem ? "🔽": "🔼"}</span>
                 </div>
           {  showItem && <CategoryItemList items ={data.itemCards}/>}
             </div>

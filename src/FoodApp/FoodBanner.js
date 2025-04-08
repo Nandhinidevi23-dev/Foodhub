@@ -9,12 +9,14 @@ const FoodBanner = () => {
 
     useEffect(() => {
         // setBannerLists(SWIGGY_API_DATA.menuItems);
-        fetchBannerList()
+        console.log("FoodBanner Mounted!");
+
+        fetchBannerList();
     }, []);
 
     const fetchBannerList = async () =>{
         try{
-            const data =await  fetch('Foodhub/Banner.json');
+            const data =await  fetch(`${process.env.PUBLIC_URL}/Banner.json`);
             const result = await data.json();
             setBannerLists(result.menuItems)
             console.log("banner page console",result.menuItems)

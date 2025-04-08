@@ -8,16 +8,20 @@ const HeaderSection = ({searchvalue , setSearchValue}) => {
     <div className=''>
         <div className="sectioncontainer ">
             <div className="d-flex ">
-              <div className='content-section'>
+              <div className='content-section '>
                 <h4 className='text-white'>Discover restaurants that food deliver near you</h4>
+                <div className='flex'>
+                  <div>
                 <input type="text" className="searchBar text-white" placeholder="Search for restaurants" 
                  value={searchvalue}
                 onChange={(e) => setSearchValue(e.target.value)} />
                 <Search className='searchicon'/>
+                </div>
                 <button className='btn-search'>Search</button>
+                </div>
               </div>
               <div>
-                <img src={sectionImg} alt="section Image" width={450}/>
+                <img src={sectionImg} alt="section Image"  class="w-[450px] hidden lg:block"/>
               </div>
             </div>
             {/* <div class="custom-shape-divider-bottom-1740726810">
